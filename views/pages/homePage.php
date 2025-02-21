@@ -1,4 +1,4 @@
-<a class="connexion" href="connexion">Connexion/Inscription</a>
+<a class="connexion" href="inscription">Connexion/Inscription</a>
 <div class="bienvenue">
     <h1>Bienvenue</h1>
     </br>

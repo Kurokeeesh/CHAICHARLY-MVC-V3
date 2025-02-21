@@ -26,7 +26,7 @@ class AuthController {
             
             $result = register($pseudo, $mail, $tel, $password);
             if ($result === true) {
-                header('Location: inscription');
+                header('Location: connexion');
                 exit();
             } else {
                 echo $result;

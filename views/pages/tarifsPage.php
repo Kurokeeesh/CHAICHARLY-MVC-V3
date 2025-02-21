@@ -1,4 +1,4 @@
-<a class="connexion" href="/../views/register.php">Connexion/Inscription</a>
+<a class="connexion" href="inscription">Connexion/Inscription</a>
 
 <div class="pdf">
     <h1>Nos Tarifs 2025</h1>
