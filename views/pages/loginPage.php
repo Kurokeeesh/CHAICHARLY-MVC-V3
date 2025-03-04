@@ -25,6 +25,6 @@ $auth->registerUser();
 
             <button type="submit" class="btn-envoyer">S'inscrire</button>
         </form>
-        <a class="conexion" href="login.php">Déjà un compte ? Connecte-toi ici</a>
+        <a class="conexion" href="connexion">Déjà un compte ? Connecte-toi ici</a>
     </div>
 </div>

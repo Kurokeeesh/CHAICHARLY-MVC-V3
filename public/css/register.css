@@ -1,9 +1,9 @@
-/*Connexion abonnés*/
-.cnx{
+/*Enregistrement abonnés*/
+.register{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4%;
+    padding-top: 4%;
     width: 100%;
     height: 805px;
     background-color: #500614;
@@ -13,7 +13,7 @@
     }
 }
 
-.cnx-form {
+.register-form {
     background-color: #6D071A;
     padding: 40px;
     border-radius: 10px;
@@ -22,7 +22,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.cnx-form label {
+.register-form label {
     display: block;
     font-size: 18px;
     font-weight: bold;
@@ -30,7 +30,7 @@
     text-align: left;
 }
 
-.cnx-form input{
+.register-form input{
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
@@ -41,6 +41,26 @@
     color: #333;
 }
 
-.cnx-form input::placeholder{
+.register-form input::placeholder{
     color: #999;
+}
+
+.btn-envoyer{
+    display: flex;
+    justify-content: center;
+    background-color: #38171f;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-left: auto ;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-family: 'Inria', serif;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-envoyer:hover {
+    background-color: #890c23;
 }

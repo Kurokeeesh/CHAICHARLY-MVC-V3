@@ -3,7 +3,7 @@ require_once "models/produitsModel.php";
 
 
 
-function testPage(){
+/*function testPage(){
 
     $donnees_recup = [
         "name"=>"jhon",
@@ -19,7 +19,7 @@ function testPage(){
     "datas_recep" => $donnees_recup,
     ];
     drawPage($datas_page);
-}
+}*/
 
 function homePage(){
 

@@ -7,9 +7,9 @@ require_once 'models/userModel.php';
 class AuthController {
     private $userModel;
     
-    //public function __construct() {
-      //  $this->userModel = new userModel();
-    //}
+    public function __construct() {
+        $this->userModel = new userModel();
+    }
     
     public function registerUser() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {

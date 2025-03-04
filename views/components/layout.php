@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/vins.css">
     <link rel="stylesheet" href="public/css/tarifs.css">
+    <link rel="stylesheet" href="public/css/register.css">
     <link rel="stylesheet" href="public/css/cnx.css">
     <link rel="stylesheet" href="public/css/footer.css">
     <title><?= $title ?></title>
