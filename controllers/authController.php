@@ -36,11 +36,11 @@ class AuthController {
     
     public function loginUser() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $mail = $_POST['mail'];
+            $login = $_POST['login'];
             $password = $_POST['password'];
             
-            if ($this->userModel->login($mail, $password)) {
-                header('Location: home');
+            if ($this->userModel->login($login, $password)) {
+                header('Location: Moderation');
                 exit();
             } else {
                 echo "Email ou mot de passe incorrect.";

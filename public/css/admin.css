@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria', serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+.Insert{
+    display: flex;
+    justify-content: center;
+    background-color: #38171f;
+
+    h1{
+        color: white;
+    }
+
+}
+
+.Update{
+    display: flex;
+    justify-content: center;
+    background-color: #38171f;
+
+    h1{
+        color: white;
+    }
+
+}
+
+.Delete{
+    display: flex;
+    justify-content: center;
+    background-color: #38171f;
+
+    h1{
+        color: white;
+    }
+
+}

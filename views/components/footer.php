@@ -1,4 +1,5 @@
 <footer>
+<a class="connexion" href="administrateur">Admin</a>
     <div class="reseaux">
         <a href="https://www.instagram.com/chai_charly/" target="_blank" rel="noopener noreferrer">
             <img class="Insta" src="public/img/Insta.png" width="50px" height="50px">

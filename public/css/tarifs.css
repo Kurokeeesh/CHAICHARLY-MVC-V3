@@ -1,8 +1,8 @@
-/* Bouton "Connexion" */
+/* Bouton "Connexion" 
 .connexion {
-    position: fixed; /* Fixe le bouton à un emplacement précis */
-    bottom: 20px; /* Distance du bas de la page */
-    right: 20px; /* Distance de la droite de la page */
+    position: fixed; /* Fixe le bouton à un emplacement précis 
+    bottom: 20px; /* Distance du bas de la page 
+    right: 20px; /* Distance de la droite de la page 
     background-color: #500614;
     text-decoration: none;
     font-size: 15px;
@@ -15,7 +15,7 @@
 .connexion:hover {
     background-color: white;
     color: rgb(70, 5, 17);
-}
+}*/
 
 .visupdf{
     position: relative;

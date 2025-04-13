@@ -89,4 +89,15 @@ function loginPage(){
     drawPage($datas_page);
 }
 
+function adminPage(){
+
+    $datas_page=[
+    "description" => "Page d'administration du site",
+    "title" => "Administration : ChaiCharly",
+    "view" => "views/pages/adminPage.php",
+    "layout" =>"views/components/layout_3.php",
+    ];
+    drawPage($datas_page);
+}
+
 ?>

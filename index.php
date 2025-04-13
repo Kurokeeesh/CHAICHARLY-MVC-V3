@@ -25,12 +25,16 @@ try{
             tarifsPage();
         break;
 
-        case "connexion":
+        /*case "connexion":
+            cnxPage();
+        break;*/
+
+        case "administrateur":
             cnxPage();
         break;
 
-        case "inscription":
-            loginPage();
+        case "Moderation":
+            adminPage();
         break;
 
         case "test":

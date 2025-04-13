@@ -12,7 +12,7 @@ class UserModel {
         }
         
         // Hashage du mot de passe
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $hashedPassword = password_hash("etjqsd25ghu".$password, PASSWORD_DEFAULT);
         $dateAbo = date('Y-m-d');
 
         // Insérer l'utilisateur
@@ -21,14 +21,15 @@ class UserModel {
         return $stmt->execute([$pseudo, $mail, $tel, $hashedPassword, $dateAbo]);
     }
 
-    public function login($mail, $password) {
+    public function login($login, $password) {
         // Récupérer l'utilisateur
-        $req = "SELECT * FROM Abonne WHERE mail = ?";
+        $req = "SELECT * FROM Admin WHERE login = ?";
         $stmt = setDB()->prepare($req);
-        $stmt->execute([$mail]);
+        $stmt->execute([$login]);
         $user = $stmt->fetch();
         
-        if ($user && password_verify($password, $user['mdp'])) {
+        if($user && $password === $user['mdp']) {
+
             return $user;
         }
         return false;

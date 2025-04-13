@@ -1,4 +1,3 @@
-<a class="connexion" href="inscription">Connexion/Inscription</a>
 <div class="nb">
     <p>
         Nous nous reservons le droit de changer de millésime lorsque le précédent est épuisé et à cette occasion d'éventuellement modifier le tarif.

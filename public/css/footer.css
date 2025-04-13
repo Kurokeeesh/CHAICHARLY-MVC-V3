@@ -23,6 +23,23 @@ footer{
     position: relative;
 
 }
+.connexion {
+    position: absolute; /* Fixe le bouton à un emplacement précis*/
+    bottom: 20px; /* Distance du bas de la page */
+    right: 20px; /* Distance de la droite de la page */
+    background-color: #500614;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.connexion:hover {
+    background-color: white;
+    color: rgb(70, 5, 17);
+}
 
 .reseaux{
     display: flex;
