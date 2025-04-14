@@ -6,15 +6,20 @@ function showArray($array){
     echo "</pre>";
 }
 
-function drawPage($datas_page){
-    //showArray($datas_page);
+function drawPage($datas_page) {
     extract($datas_page);
-    //echo $title;
 
     ob_start();
     require_once($view);
     $content = ob_get_clean();
-    require_once($layout);
+
+    // 🛡️ Sécurisation du layout
+    if (!empty($layout) && file_exists($layout)) {
+        require_once($layout);
+    } else {
+        echo $content;
+    }
 }
+
 
 ?>

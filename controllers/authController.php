@@ -38,19 +38,22 @@ class AuthController {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $login = $_POST['login'];
             $password = $_POST['password'];
-            
-            if ($this->userModel->login($login, $password)) {
-                header('Location: Moderation');
+    
+            $user = $this->userModel->login($login, $password);
+    
+            if ($user) {
+                session_start();
+                $_SESSION['admin'] = $user['login'];
+                header('Location: Moderation'); // <- ici la vraie redirection
                 exit();
             } else {
-                echo "Email ou mot de passe incorrect.";
+                echo "<p style='color:red;
+                         display:flex;
+                         flex-direction:column;
+                         align-items: center;'>
+                            ❌ Login ou mot de passe incorrect.
+                        </p>";
             }
         }
-    }
-    
-    public function logoutUser() {
-        $this->userModel->logout();
-        header('Location: inscription');
-        exit();
-    }
+    } 
 }

@@ -1,0 +1,92 @@
+/* ajoutervin.css */
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal de la page ajoutervin */
+.ajoutervin-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la page */
+.ajoutervin-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7b1e1e;
+}
+
+.btn-retour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 150px;
+    padding: 10px 15px;
+    background-color: #a52a2a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-retour:hover {
+    background-color: #801f1f;
+}
+
+
+/* Formulaire d'ajout de vin */
+.ajoutervin-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels du formulaire */
+.ajoutervin-container form label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Champs de saisie et textarea du formulaire */
+.ajoutervin-container form input,
+.ajoutervin-container form textarea,
+.ajoutervin-container form select {
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Champ de saisie texte et numérique à 100% de la largeur */
+.ajoutervin-container form input[type="text"],
+.ajoutervin-container form input[type="number"],
+.ajoutervin-container form textarea {
+    width: 100%;
+}
+
+/* Bouton de validation */
+.ajoutervin-container form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #3c8d40;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol pour le bouton */
+.ajoutervin-container form button:hover {
+    background-color: #2f7032;
+}

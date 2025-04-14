@@ -12,7 +12,7 @@ class UserModel {
         }
         
         // Hashage du mot de passe
-        $hashedPassword = password_hash("etjqsd25ghu".$password, PASSWORD_DEFAULT);
+        $hashedPassword = password_hash("".$password, PASSWORD_DEFAULT);
         $dateAbo = date('Y-m-d');
 
         // Insérer l'utilisateur
@@ -28,8 +28,7 @@ class UserModel {
         $stmt->execute([$login]);
         $user = $stmt->fetch();
         
-        if($user && $password === $user['mdp']) {
-
+        if ($user && password_verify($password, $user['mdp'])) {
             return $user;
         }
         return false;

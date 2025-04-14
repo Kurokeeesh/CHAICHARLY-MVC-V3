@@ -37,6 +37,14 @@ try{
             adminPage();
         break;
 
+        case "ajouterProduit":
+            ajouterProduitPage();
+            break;
+
+        case "Logout":
+            logoutPage();
+            break;
+
         case "test":
             testPage();
         break;
