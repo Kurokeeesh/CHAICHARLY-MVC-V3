@@ -1,7 +1,9 @@
 <link rel="stylesheet" href="public/css/ajouterProduit.css">
+<button id="themeToggle" class="btn-theme">🌙 Mode sombre</button>
 
 <div class="ajoutervin-container">
     <h1>➕ Ajouter un nouveau produit</h1>
+    
 
     <a href="Moderation" class="btn-retour">⬅ Retour à l’espace admin</a>
 
@@ -40,3 +42,28 @@
         <button type="submit" name="ajouter">✅ Ajouter</button>
     </form>
 </div>
+
+<script>
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+
+  const btn = document.getElementById('themeToggle');
+  if (btn) {
+    if (document.body.classList.contains('dark-mode')) {
+      btn.textContent = '☀ Mode clair';
+    } else {
+      btn.textContent = '🌙 Mode sombre';
+    }
+
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      btn.textContent = isDark ? '☀ Mode clair' : '🌙 Mode sombre';
+    });
+  }
+</script>
+

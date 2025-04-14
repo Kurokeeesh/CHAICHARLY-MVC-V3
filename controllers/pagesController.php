@@ -74,7 +74,7 @@ function cnxPage(){
 
     $datas_page=[
     "description" => "Page d'inscription du site",
-    "title" => "Inscription : ChaiCharly",
+    "title" => "AdminCnx : ChaiCharly",
     "view" => "views/pages/cnxPage.php",
     "layout" =>"views/components/layout.php",
     ];

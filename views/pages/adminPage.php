@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="public/css/admin.css">
 <a href="index.php?page=Logout" class="btn-deconnexion">🚪 Se déconnecter</a>
+<button id="themeToggle" class="btn-theme">🌙 Mode sombre</button>
+
 
 
 <h1>Bienvenue sur la page admin 🎉</h1>
@@ -78,4 +80,22 @@ foreach ($produits as $produit):
 <?php endforeach; ?>
 
 <?php if (isset($openGrid) && $openGrid) echo '</div>'; ?>
+
+<script>
+  const btn = document.getElementById('themeToggle');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    btn.textContent = '☀ Mode clair';
+  }
+
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    btn.textContent = isDark ? '☀ Mode clair' : '🌙 Mode sombre';
+  });
+</script>
+
 
